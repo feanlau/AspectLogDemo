@@ -1,7 +1,6 @@
 package com.lqr.utils;
 
 import com.lqr.annotation.Log;
-
 import javassist.NotFoundException;
 
 /**
