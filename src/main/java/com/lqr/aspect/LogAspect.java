@@ -2,7 +2,7 @@ package com.lqr.aspect;
 
 import com.lqr.annotation.Log;
 import com.lqr.utils.AnnotationUtils;
-
+import javassist.NotFoundException;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -12,13 +12,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.thymeleaf.util.StringUtils;
 
-import javassist.NotFoundException;
-
 @Component
 @Aspect
 public class LogAspect {
 
-    private Logger logger = LoggerFactory.getLogger(LogAspect.class);
+    private final Logger logger = LoggerFactory.getLogger(LogAspect.class);
 
     @Pointcut("execution(* com.lqr.service..*(..))")
     private void pointcut() {

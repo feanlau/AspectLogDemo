@@ -3,12 +3,10 @@ package com.lqr.controller;
 import com.lqr.model.Result;
 import com.lqr.model.User;
 import com.lqr.service.UserService;
-
+import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javassist.NotFoundException;
 
 @RestController
 public class UserController {

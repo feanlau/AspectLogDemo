@@ -5,10 +5,8 @@ import com.lqr.model.Result;
 import com.lqr.model.User;
 import com.lqr.utils.LogUtils;
 import com.lqr.utils.ResultUtils;
-
-import org.springframework.stereotype.Service;
-
 import javassist.NotFoundException;
+import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
